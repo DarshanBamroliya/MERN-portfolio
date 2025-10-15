@@ -1,7 +1,7 @@
 'use client';
 import AnimatedButton from '@/Components/Common/AnimatedButton/AnimatedButton';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React from 'react';
 import { FaAsterisk } from "react-icons/fa6";
 
 function HeroSec() {
