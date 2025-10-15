@@ -2,8 +2,8 @@
 import { useEffect, useRef } from 'react';
 
 export default function CustomCursor() {
-  const dotRef = useRef(null);
-  const ringRef = useRef(null);
+  const dotRef = useRef<HTMLDivElement | null>(null);
+  const ringRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const dot = dotRef.current;
@@ -14,7 +14,7 @@ export default function CustomCursor() {
     let ringX = 0;
     let ringY = 0;
 
-    const moveCursor = (e) => {
+    const moveCursor = (e: MouseEvent) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
 
