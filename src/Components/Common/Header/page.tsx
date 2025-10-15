@@ -36,7 +36,7 @@ function Header() {
       <nav className="absolute left-4 top-[40%] -translate-y-1/2 pointer-events-auto">
         <div className="origin-left -rotate-90">
           <ul className="flex items-center gap-6 text-[9px] uppercase tracking-[0.35em]">
-            {sideMenu.map((item, idx) => (
+            {sideMenu.map((item) => (
               <React.Fragment key={item.title}>
                 <li>
                   <a
